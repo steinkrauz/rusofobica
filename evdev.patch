@@ -1,0 +1,40 @@
+--- rules/evdev.xml	2014-06-17 12:13:23.186549334 +0400
++++ rules-rf/evdev.xml	2014-06-17 14:08:56.896491935 +0400
+@@ -4245,6 +4245,37 @@
+     </layout>
+     <layout>
+       <configItem>
++        <name>rf</name>
++        
++        <shortDescription>rf</shortDescription>
++        <description>Russian (Rusofobica)</description>
++        <languageList>
++          <iso639Id>rus</iso639Id>
++        </languageList>
++      </configItem>
++      <variantList>
++        <variant>
++          <configItem>
++            <name>panduro</name>
++            <description>Pandurica (Vysokaya rusofobica)</description>
++          </configItem>
++        </variant>
++        <variant>
++          <configItem>
++            <name>panduro_nb</name>
++            <description>Pandurica (Vysokaya rusofobica) nb</description>
++          </configItem>
++        </variant>
++        <variant>
++          <configItem>
++            <name>rusofob</name>
++            <description>Nizkaya rusofobica</description>
++          </configItem>
++        </variant>
++      </variantList>
++    </layout>
++    <layout>
++      <configItem>
+         <name>ru</name>
+         
+         <shortDescription>ru</shortDescription>

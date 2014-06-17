@@ -1,0 +1,123 @@
+// Rusofobica for Xkb
+// Thanks to Panduro and Lookatmoron
+// http://lj.rossia.org/users/lookatmoron/162974.html
+// Feedback to steinkrauz@yahoo.com
+
+partial alphanumeric_keys
+xkb_symbols "panduro" {
+
+    include "us(basic)"
+    name[Group1]= "Pandurica (Vysokaya rusofobica)";
+
+    include "rf(combies_pc)"
+    include "rf(sugar)"
+    include "level3(ralt_switch)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "panduro_nb" {
+
+    include "us(basic)"
+    name[Group1]= "Pandurica (Vysokaya rusofobica) nb";
+
+    include "rf(combies_nb)"
+    include "rf(sugar)"
+    include "level3(ralt_switch)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "sugar" {
+    //some sugar
+    key <AB01> { [ z,               Z,              zcaron, Zcaron ] }; //ž, Ž
+    key <AB03> { [ c,               C,              ccaron, Ccaron ] }; //č, Č
+    key <AC02> { [ s,               S,              scaron, Scaron ] }; //š, Š
+    key <AD03> { [ e,               E,              ecircumflex, Ecircumflex ] }; //ê, Ê
+    key <AD08> { [ i,               I,              icircumflex, Icircumflex ] }; //î, Î
+};
+
+partial alphanumeric_keys
+xkb_symbols "combies_pc" {
+
+    //combining symbols
+    key <AB08> { [ comma,           less,           U0302,  U0302  ] }; //combining circumflex
+    key <AB09> { [ period,          greater,        U030C,  U030C  ] }; //combining caron
+    key <AB10> { [ slash,           question,       U0327,  U0327  ] }; //combining cedilla
+};
+
+partial alphanumeric_keys
+xkb_symbols "combies_nb" {
+
+    //combining symbols
+    key <AB08> { [ comma,           less,           U0327,  U0327  ] }; //combining cedilla
+    key <AB09> { [ period,          greater,        U030C,  U030C  ] }; //combining caron
+    key <AB10> { [ slash,           question,       U0302,  U0302  ] }; //combining circumflex
+};
+
+partial alphanumeric_keys
+xkb_symbols "lowlife" {
+
+    key <AE01> { [           1,      exclam  ] };
+    key <AE02> { [           2,    quotedbl  ] };
+    key <AE03> { [           3,  numerosign  ] };
+    key <AE04> { [           4,   semicolon  ] };
+    key <AE05> { [           5,     percent  ] };
+    key <AE06> { [           6,       colon  ] };
+    key <AE07> { [           7,    question  ] };
+    key <AE08> { [           8,    asterisk  ] };
+    key <AE09> { [           9,   parenleft  ] };
+    key <AE10> { [           0,  parenright  ] };
+    key <AE11> { [       minus,  underscore  ] };
+    key <AE12> { [       equal,        plus  ] };
+    key <BKSL> { [   backslash,         bar  ] };
+
+    key <AB10> { [      period,       comma  ] };
+    key <BKSL> { [   backslash,       slash  ] };
+
+    key <TLDE> { [ ediaeresis,  Ediaeresis   ] };
+    key <AD01> { [         y,   Y            ] };
+    key <AD02> { [         c,   C            ] };
+    key <AD03> { [         u,   U            ] };
+    key <AD04> { [         k,   K            ] };
+    key <AD05> { [         e,   E            ] };
+    key <AD06> { [         n,   N            ] };
+    key <AD07> { [         g,   G            ] };
+    key <AD08> { [    scaron,   Scaron       ] };
+    key <AD09> { [ scircumflex, Scircumflex  ] };
+    key <AD10> { [         z,   Z            ] };
+    key <AD11> { [         h,   H            ] };
+    key <AD12> { [ apostrophe,  apostrophe   ] };
+
+    key <AC01> { [         f,   F            ] };
+    key <AC02> { [ icircumflex, Icircumflex  ] };
+    key <AC03> { [         v,   V            ] };
+    key <AC04> { [         a,   A            ] };
+    key <AC05> { [         p,   P            ] };
+    key <AC06> { [         r,   R            ] };
+    key <AC07> { [         o,   O            ] };
+    key <AC08> { [         l,   L            ] };
+    key <AC09> { [         d,   D            ] };
+    key <AC10> { [    zcaron,   Zcaron       ] };
+    key <AC11> { [ ecircumflex, Ecircumflex  ] };
+
+    key <AB01> { [ adiaeresis,  Adiaeresis   ] };
+    key <AB02> { [    ccaron,   Ccaron       ] };
+    key <AB03> { [         s,   S            ] };
+    key <AB04> { [         m,   M            ] };
+    key <AB05> { [         i,   I            ] };
+    key <AB06> { [         t,   T            ] };
+    key <AB07> { [     U0327,   U0327        ] };
+    key <AB08> { [         b,   B            ] };
+    key <AB09> { [ udiaeresis,  Udiaeresis   ] };
+
+    include "kpdl(comma)"
+
+};
+
+partial alphanumeric_keys
+xkb_symbols "rusofob" {
+
+    include "rf(lowlife)"
+    name[Group1]= "Nizkaya rusofobica";
+
+    include "level3(ralt_switch)"
+};
