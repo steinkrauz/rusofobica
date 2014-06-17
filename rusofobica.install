@@ -1,9 +1,9 @@
 # We need to add a reference to evdev.xml to the new layouts
 
 ## arg 1:  the new package version
-#pre_install() {
-# some 
-#}
+pre_install() {
+ echo '' 
+}
 
 ## arg 1:  the new package version
 post_install() {
@@ -30,6 +30,6 @@ pre_remove() {
 }
 
 ## arg 1:  the old package version
-#post_remove() {
-	# do something here
-#}
+post_remove() {
+  echo ''
+}

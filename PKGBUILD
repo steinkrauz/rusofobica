@@ -7,8 +7,8 @@ arch=(any)
 license=('GPL')
 url="http://lj.rossia.org/users/lookatmoron/162974.html"
 depends=('xkbdata')
-source=(rusofobica-${pkgver}.tar.gz)
-md5sums=('b27b9306fdeee9c52ee67c49e0665e6c')
+source=(https://bitbucket.org/steinkrauz/rusofobica/downloads/rusofobica-${pkgver}.tar.gz)
+md5sums=('aceb833a419d454b53233965af9b04d9')
 install=rusofobica.install
 
 package() {
