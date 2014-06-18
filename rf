@@ -32,7 +32,7 @@ xkb_symbols "sugar" {
     key <AB03> { [ c,               C,             ccaron,  Ccaron       ] };	//č, Č
     key <AC01> { [ a,               A,         adiaeresis,  Adiaeresis   ] };	//ä, Ä
     key <AC02> { [ s,               S,             scaron,  Scaron       ] };	//š, Š
-    key <AC11> { [ apostrophe,      quotedblb ecircumflex,  Ecircumflex  ] };	//ê, Ê
+    key <AC11> { [ apostrophe,      quotedblb, ecircumflex,  Ecircumflex  ] };	//ê, Ê
     key <AD03> { [ e,               E,         ediaeresis,  Ediaeresis   ] };   //ë, Ë
     key <AD07> { [ u,               U,         udiaeresis,  Udiaeresis   ] };	//ü, Ü
     key <AD08> { [ i,               I,        icircumflex,  Icircumflex  ] };	//î, Î
