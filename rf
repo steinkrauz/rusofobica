@@ -28,11 +28,14 @@ xkb_symbols "panduro_nb" {
 partial alphanumeric_keys
 xkb_symbols "sugar" {
     //some sugar
-    key <AB01> { [ z,               Z,              zcaron, Zcaron ] }; //ž, Ž
-    key <AB03> { [ c,               C,              ccaron, Ccaron ] }; //č, Č
-    key <AC02> { [ s,               S,              scaron, Scaron ] }; //š, Š
-    key <AD03> { [ e,               E,              ecircumflex, Ecircumflex ] }; //ê, Ê
-    key <AD08> { [ i,               I,              icircumflex, Icircumflex ] }; //î, Î
+    key <AB01> { [ z,               Z,             zcaron,  Zcaron       ] }; 	//ž, Ž
+    key <AB03> { [ c,               C,             ccaron,  Ccaron       ] };	//č, Č
+    key <AC01> { [ a,               A,         adiaeresis,  Adiaeresis   ] };	//ä, Ä
+    key <AC02> { [ s,               S,             scaron,  Scaron       ] };	//š, Š
+    key <AC11> { [ apostrophe,      quotedblb ecircumflex,  Ecircumflex  ] };	//ê, Ê
+    key <AD03> { [ e,               E,         ediaeresis,  Ediaeresis   ] };   //ë, Ë
+    key <AD07> { [ u,               U,         udiaeresis,  Udiaeresis   ] };	//ü, Ü
+    key <AD08> { [ i,               I,        icircumflex,  Icircumflex  ] };	//î, Î
 };
 
 partial alphanumeric_keys
@@ -42,6 +45,7 @@ xkb_symbols "combies_pc" {
     key <AB08> { [ comma,           less,           U0302,  U0302  ] }; //combining circumflex
     key <AB09> { [ period,          greater,        U030C,  U030C  ] }; //combining caron
     key <AB10> { [ slash,           question,       U0327,  U0327  ] }; //combining cedilla
+    key <AC10> { [ semicolon,       colon,          U0308,  U0308  ] }; //combining diaeresis
 };
 
 partial alphanumeric_keys
